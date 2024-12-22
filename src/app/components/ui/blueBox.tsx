@@ -1,8 +1,13 @@
 import React from 'react'
 
-export const BlueBox = (props: any) => {
+interface BlueBoxProps {
+  width: string;
+  height: string;
+}
+
+export const BlueBox = ({width, height}: BlueBoxProps) => {
   return (
-    <div className={`${props.width} ${props.height} bg-[#C4DEFD] `}>
+    <div className={`${width} ${height} bg-[#C4DEFD] `}>
 
     </div>
   )
